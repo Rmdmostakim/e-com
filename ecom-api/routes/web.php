@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Str;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  //  $uuid = Str::uuid();
+ // return $uuid;
+ /*
+ $temp = Uuid::generate(4);
+ for($i = 0 ; $i <1000000 ; $i++){
+    $uuid = Uuid::generate(4);
+    if($temp == $uuid){
+        return 'same';
+    }
+    echo $i.'<br/>';
+ }
+ */
+return \Product::getCategory();
 });
+
+
+Route::get('home',[HomeController::class,'Home']);
