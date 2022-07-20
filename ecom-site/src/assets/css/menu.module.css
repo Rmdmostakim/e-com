@@ -1,0 +1,33 @@
+.navContainer {
+  width: 100%;
+  min-height: 50px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  color: #ffffff;
+}
+.navMenu {
+  margin: 1% auto;
+}
+.navMenu .navBrand img {
+  width: 60px;
+}
+.navMenu .navBrand a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navMenu .navSearch input {
+  box-shadow: none !important;
+}
+.navMenu .navSearch .searchBtn {
+  cursor: pointer;
+}
+.cartBox {
+  cursor: pointer;
+  float: left;
+}
+
+.profile {
+  cursor: pointer;
+  float: right;
+}

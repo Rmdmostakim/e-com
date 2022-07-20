@@ -1,0 +1,15 @@
+.cart {
+  min-width: 200px;
+  min-height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 8%;
+}
+.cart button {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.cart a {
+  outline: none !important;
+  box-shadow: none !important;
+}

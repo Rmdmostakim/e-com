@@ -1,0 +1,8 @@
+.tracker {
+  min-height: 100px;
+}
+.tracker input,
+button {
+  outline: none;
+  box-shadow: none !important;
+}

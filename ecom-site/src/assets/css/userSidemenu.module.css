@@ -1,0 +1,44 @@
+.sideMenu {
+  width: 200px !important;
+}
+.sideMenu button {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.dashboard a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+.dashboard a:hover {
+  color: #ff6e40 !important;
+}
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.profile a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0px 5px 0px 5px;
+}
+.profile a:hover {
+  color: #ff6e40;
+}
+.profileActive {
+  color: #ff6e40;
+}
+.link ul li {
+  list-style: none;
+}
+.link a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+.link a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+.active {
+  color: rgba(0, 0, 0, 1) !important;
+}

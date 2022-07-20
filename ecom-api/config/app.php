@@ -229,7 +229,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'UserAuth'=> App\Facades\UserAuthenticationFacade::class,
         'Product'=>App\Facades\ProductServicesFacade::class,
+        'Token'=>App\Facades\TokenServicesFacade::class,
 
     ],
 

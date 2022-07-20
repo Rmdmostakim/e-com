@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\UsersiteController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,3 +21,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 */
 Route::get('home',[HomeController::class,'Home']);
+Route::post('user-registration',[UserController::class,'registration']);
+Route::post('user-verification',[UserController::class,'userVerification']);
+Route::post('user-verification-resend',[UserController::class,'resnedVerification']);
+Route::post('user-login',[UserController::class,'userLogin']);
+Route::post('user-cart',[UsersiteController::class,'getCart']);

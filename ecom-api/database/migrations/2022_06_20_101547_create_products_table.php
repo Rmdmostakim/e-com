@@ -17,8 +17,8 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('slug_id')->unique();
             $table->string('name');
-            $table->smallInteger('brand_id');
-            $table->smallInteger('category_id');
+            $table->smallInteger('brand_slug_id');
+            $table->smallInteger('category_slug_id');
             $table->double('unit_price', 8, 2);
             $table->double('import_price', 8, 2);
             $table->double('offer_price', 8, 2)->nullable();

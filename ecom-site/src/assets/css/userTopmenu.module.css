@@ -1,0 +1,11 @@
+.topMenu {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+.topMenu a {
+  text-decoration: none;
+}
+.menuBar {
+  margin-left: 10px;
+}

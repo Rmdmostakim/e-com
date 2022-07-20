@@ -14,21 +14,5 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-  //  $uuid = Str::uuid();
- // return $uuid;
- /*
- $temp = Uuid::generate(4);
- for($i = 0 ; $i <1000000 ; $i++){
-    $uuid = Uuid::generate(4);
-    if($temp == $uuid){
-        return 'same';
-    }
-    echo $i.'<br/>';
- }
- */
-return \Product::getCategory();
-});
-
-
 Route::get('home',[HomeController::class,'Home']);
+Route::post('user-registration',[UserController::class,'registration']);

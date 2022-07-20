@@ -1,0 +1,15 @@
+.sidenav {
+  width: 100%;
+  height: 100%;
+}
+.sidenav .title {
+  background-color: #7fad39;
+}
+.sidenav .sidemenu {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.sidemenu::-webkit-scrollbar {
+  width: 0;
+}

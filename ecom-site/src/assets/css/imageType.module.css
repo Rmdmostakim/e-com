@@ -1,0 +1,26 @@
+.upload_btn_wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload_btn_wrapper input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.preview {
+  width: 100%;
+  text-align: center;
+}
+.preview img {
+  width: 60px;
+  height: 80px;
+}
+.preview .remove {
+  position: relative;
+  top: -88%;
+  left: 23%;
+  cursor: pointer;
+}

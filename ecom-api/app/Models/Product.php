@@ -11,8 +11,8 @@ class Product extends Model
     protected $fillable = [
         'slug_id',
         'name',
-        'brand_id',
-        'category_id',
+        'brand_slug_id',
+        'category_slug_id',
         'unit_price',
         'import_price',
         'stock',
@@ -20,16 +20,21 @@ class Product extends Model
 
     protected $hidden = [
         'id',
-        'brand_id',
-        'category_id',
     ];
 
+    public function category(){
+        return $this->belongsTo(Category::class,'category_slug_id','slug_id');
+    }
 
     public function brand(){
-        return $this->belongsTo(Brand::class);
+        return $this->belongsTo(Brand::class,'brand_slug_id','slug_id');
     }
 
     public function images(){
-        return $this->hasMany(ProductImage::class);
+        return $this->hasMany(ProductImage::class,'product_slug_id','slug_id');
+    }
+
+    public function details(){
+        return $this->hasOne(ProductDetails::class,'product_slug_id','slug_id');
     }
 }

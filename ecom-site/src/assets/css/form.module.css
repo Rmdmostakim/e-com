@@ -1,0 +1,19 @@
+.text input {
+  outline: none;
+  box-shadow: none !important;
+}
+.errorBox {
+  font-size: x-small;
+}
+.errorText {
+  color: red;
+}
+.errorOutline {
+  border: 1px solid red !important;
+}
+.visible {
+  position: relative;
+  left: 90%;
+  top: -30px;
+  cursor: pointer;
+}

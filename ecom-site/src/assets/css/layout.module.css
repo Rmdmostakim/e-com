@@ -1,0 +1,21 @@
+.main {
+  padding: 16px;
+  margin-top: 5rem;
+  height: 85vh;
+  overflow: hidden;
+}
+.sidenav {
+  float: left;
+  height: 75vh;
+  width: 15%;
+  border-left: 2px solid #7fad39;
+  border-right: 2px solid #7fad39;
+  border-bottom: 2px solid #7fad39;
+  overflow: hidden;
+}
+.products {
+  float: right;
+  width: 84%;
+  height: 75vh;
+  margin-left: 1%;
+}

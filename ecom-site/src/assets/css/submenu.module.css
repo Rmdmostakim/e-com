@@ -1,0 +1,11 @@
+.submenu button {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.submenu a {
+  text-decoration: none;
+  color: #000000;
+}
+.active {
+  font-weight: bold;
+}
